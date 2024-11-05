@@ -5,30 +5,29 @@ DEPARTMENT :  ECE
 YEAR :  2ND YR
 
 1. Setup and Initialize: - What command do you use to create a new directory named `git-workshop and navigate into it?
-
+ANS:
 mkdir git-workshop   # Creates a new directory called 'git-workshop'
 cd git-workshop      # Changes the current directory to 'git-workshop'
 
 2. Initialize a Git Repository: - What command initializes a Git repository in your directory?
-
+ANS:
 git init
 3. Create and Modify Files: - How do you create a new file named `hello.txt` and add the content 'Hello, Git
 echo "Hello, Git" > hello.txt
-
+ANS:
 git status
-. 4. Check the Status of Your Repository: - What command displays the status of your repository?
+4. Check the Status of Your Repository: - What command displays the status of your repository?
+ANS:
 git status
-
 This command shows information about the current state of the repository, including any files that are staged, unstaged, or untracked.
 5. Stage and Commit Changes: - What command stages the file `hello.txt`? - What command commits the staged file with the message 'Add hello.txt with welcome message'?
+ANS:
 To stage the file hello.txt, use the following command:
 git add hello.txt
 To commit the staged file with the message "Add hello.txt with welcome message", use the following command:
 git commit -m "Add hello.txt with welcome message"
-
-
 6. Branching: - What command creates a new branch named `update-content`? - How do you switch to the `update-content` branch?
-
+ANS:
 To create a new branch named update-content, use the following command:
 git branch update-content
 
@@ -40,7 +39,7 @@ git checkout -b update-content
 
 
 7. Make Changes on the Branch: - What command would you use to append the text 'This is a simple Git assignment.' to `hello.txt`? - What command stages and commits the changes with the message 'Update hello.txt with additional message'?
-
+ANS:
 To append the text "This is a simple Git assignment." to hello.txt, use the following command:
 echo "This is a simple Git assignment." >> hello.txt
 
@@ -50,7 +49,7 @@ git commit -m "Update hello.txt with additional message"
 
 8. Merge Changes: - What command switches you back to the `main` branch? - How do you merge the `update-content` branch into `main`?
 To switch back to the main branch, use the following command:
-
+ANS:
 git checkout main
 
 To merge the update-content branch into main, use:
@@ -59,7 +58,7 @@ git merge update-content
 This command combines the changes from update-content into main.
 
 9. View Commit History: - What command shows the commit history?
-
+ANS:
 git log
 
 This command displays a list of commits in the repository, including details such as commit IDs, author names, dates, and commit messages. For a more compact view, you can use:
@@ -68,7 +67,7 @@ This option shows each commit on a single line with its ID and message.
 
 
 10. Undo and Reset (Practice Safely): - If you make a change to `hello.txt` that you want to revert before committing, what command would you use? - How can you reset your branch to a previous commit (optional, for advanced practice)?
-
+ANS:
 If you make a change to hello.txt that you want to revert before committing, you can use the following command to discard the changes:
 git checkout -- hello.txt
 
@@ -81,7 +80,9 @@ This command will reset your branch to the specified commit, discarding all chan
 git reset --soft abc123
 
 This will keep your changes staged for commit.
+
 11. Push to a Remote Repository (Optional): - What command adds a remote repository named `origin`? - What command pushes your local `main` branch to the remote repository?
+ANS:
 To add a remote repository named origin, you can use the following command, replacing URL with the actual URL of your remote repository:
 git remote add origin URL
 To push your local main branch to the remote repository, use:
